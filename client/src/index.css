@@ -4,3 +4,18 @@
   margin-inline: auto;
   padding-inline: 2rem;
 }
+
+@theme{
+ 
+  --color-navtoptext:#8C94A3;
+  --color-navtophovertext:#FFFFFF;
+  --color-brand:#FF6636;
+  --color-primary:#1D2026;
+  --color-boxes:#E9EAF0;
+  --color-boxestext:#4E5566;
+  --color-secondarybtn:#FFEEE8;
+  --color-ternary:#B7BAC7;
+  --color-fivenary:#8C94A3;
+
+
+}
