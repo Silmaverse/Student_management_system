@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
 @utility container {
@@ -15,7 +16,10 @@
   --color-boxestext:#4E5566;
   --color-secondarybtn:#FFEEE8;
   --color-ternary:#B7BAC7;
+  --color-fournary:#A1A5B3;
   --color-fivenary:#8C94A3;
+  --color-footericon:#363B4766;
+  --font-brand:"Inter", sans-serif;
 
 
 }
