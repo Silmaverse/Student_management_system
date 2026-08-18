@@ -9,7 +9,7 @@ import { FiShoppingCart } from "react-icons/fi";
 const Navbottom = () => {
   return (
     <>
-    <div className="navbottom flex justify-between items-center py-3">
+    <div className="navbottom flex justify-between items-center py-3 px-8">
             <div className="navleft flex gap-12.5 items-center ">
               <div className="navlogo flex gap-2 ">
                 <div className="navimg w-10 h-10">

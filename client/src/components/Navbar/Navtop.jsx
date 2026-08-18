@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 const Navtop = () => {
   return (
     <>
-      <div className="navtop flex justify-between">
+      <div className="navtop px-8 flex justify-between items-center">
         <div className="navleftul">
           <ul className="text-[14px] font-medium font-brand text-fivenary flex gap-10 items-center">
             <li className="hover:text-white relative transition-colors  delay-150 duration-300 ease-in-out  group cursor-pointer">
