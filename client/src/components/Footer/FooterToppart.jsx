@@ -8,7 +8,7 @@ const FooterToppart = () => {
           <h1 className="w-134 text-[40px] font-semibold font-brand text-white">
             Start learning with 67.1k students around the world.
           </h1>
-          <div className="btn pt-7.5 pb-[100px] flex gap-4 items-center">
+          <div className="btn pt-7.5 pb-25 flex gap-4 items-center">
             <button className="text-[16px] font-semibold font-brand w-42 h-12 bg-brand text-white">
               Join the Family
             </button>
