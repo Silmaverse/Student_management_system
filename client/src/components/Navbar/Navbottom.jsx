@@ -5,6 +5,7 @@ import brandImage from "../../assets/brandImage/GraduationCap.png";
 import { GrNotification } from "react-icons/gr";
 import { FaRegHeart } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
+import Button from '../../utils/Button';
 
 const Navbottom = () => {
   return (
@@ -40,16 +41,18 @@ const Navbottom = () => {
               </div>
             </div>
             <div className="navright flex gap-10 items-center">
-              <div className="navulright">
-                 <ul className="flex items-center gap-3">
-                  <li className="size-6 text-primary"><GrNotification /></li>
-                  <li className="size-6 text-primary"><FaRegHeart /></li>
-                  <li className="size-6 text-primary"><FiShoppingCart /></li>
-                 </ul>
+              <div className="navulright flex items-center gap-3">
+                  <div className="size-5 text-primary"><GrNotification className='w-full h-full' />
+                  </div>
+                  <div className="size-5 text-primary"><FaRegHeart className='size-full' />
+                  </div>
+                  <div className="size-5 text-primary"><FiShoppingCart className='w-full size-full' />
+                  </div>
+                  
               </div>
               <div className="navbtn flex gap-3">
-                <button className="text-[12px] font-semibold font-brand w-42 h-12 bg-secondarybtn text-brand">Create Account</button>
-                <button className="text-[12px] font-semibold font-brand w-25 h-12 bg-brand text-white">Sign In</button>
+                <Button variant='secondary' style={{width:"168px",height:"48px",fontSize:"16px"}} >Create Account</Button>
+                <Button variant='primary' style={{width:"168px",height:"48px",fontSize:"16px"}} >Sign In</Button>
               </div>
             </div>
           </div>
