@@ -1,42 +1,85 @@
 import React from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import NavItem from "../../utils/NavItem";
 
 const Navtop = () => {
   return (
     <>
       <div className="navtop px-8 flex justify-between items-center">
         <div className="navleftul">
-          <ul className="text-[14px] font-medium font-brand text-fivenary flex gap-10 items-center">
-            <li className="hover:text-white relative transition-colors  delay-150 duration-300 ease-in-out  group cursor-pointer">
-              Home
-              <div className="absolute w-full scale-x-0 origin-right bg-brand h-0.5 -top-4 group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-            </li>
-            <li className="hover:text-white relative transition-colors  delay-150 duration-300 ease-in-out  group cursor-pointer">
-              Courses
-              <div className="absolute w-full scale-x-0 origin-right bg-brand h-0.5 -top-4 group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-            </li>
-            <li className="hover:text-white relative transition-colors delay-150 duration-300 ease-in-out  group cursor-pointer">
-              About
-              <div className="absolute w-full scale-x-0 origin-right bg-brand h-0.5 -top-4 group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-            </li>
-            <li className="hover:text-white relative transition-colors  delay-150 duration-300 ease-in-out group cursor-pointer">
-              Contact
-              <div className="absolute w-full scale-x-0 origin-right bg-brand h-0.5 -top-4 group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-            </li>
-            <li className="hover:text-white relative transition-colors  delay-150 duration-300 ease-in-out group cursor-pointer">
-              Become an Instructor
-              <div className="absolute w-full scale-x-0 origin-right bg-brand h-0.5 -top-4 group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-            </li>
+          <ul className="flex gap-10 items-center">
+            <NavItem
+              style={{
+                fontSize: "16px",
+                fontWeight: "500",
+                fontFamily: "var(--font-brand)",
+              }}
+              children={"Home"}
+            />
+            <NavItem
+              style={{
+                fontSize: "16px",
+                fontWeight: "500",
+                fontFamily: "var(--font-brand)",
+              }}
+              children={"Courses"}
+            />
+            <NavItem
+              style={{
+                fontSize: "16px",
+                fontWeight: "500",
+                fontFamily: "var(--font-brand)",
+              }}
+              children={"About"}
+            />
+            <NavItem
+              style={{
+                fontSize: "16px",
+                fontWeight: "500",
+                fontFamily: "var(--font-brand)",
+              }}
+              children={"Contact"}
+            />
+            <NavItem
+              style={{
+                fontSize: "16px",
+                fontWeight: "500",
+                fontFamily: "var(--font-brand)",
+              }}
+              children={"Become an Instructor"}
+            />
           </ul>
         </div>
         <div className="navrightul">
           <ul className="flex gap-6">
-            <li className="text-[14px] font-normal font-brand flex gap-4 items-center text-fournary">
-              USD <MdOutlineKeyboardArrowDown />
-            </li>
-            <li className="text-[14px] font-normal font-brand flex gap-4 items-center text-fournary">
-              English <MdOutlineKeyboardArrowDown />
-            </li>
+            <NavItem
+              children={"USD"}
+              children2={<MdOutlineKeyboardArrowDown />}
+              style={{
+                fontSize: "16px",
+                fontWeight: "400",
+                fontFamily: "var(--font-brand)",
+                display:'flex',
+                gap:'8px',
+                alignItems:'center'
+              }}
+              line={false}
+              userstyle={false}
+            />
+            <NavItem
+              children={"English"}
+              children2={<MdOutlineKeyboardArrowDown />}
+              style={{
+                fontSize: "16px",
+                fontWeight: "400",
+                fontFamily: "var(--font-brand)",
+                display:'flex',
+                gap:'8px',
+                alignItems:'center'
+              }}
+              line={false}
+              userstyle={false}
+            />
           </ul>
         </div>
       </div>

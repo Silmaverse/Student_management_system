@@ -1,13 +1,18 @@
 import React from "react";
 
-const Info = ({ children1,children2, item, variant = "primary", broke,style }) => {
+const Info = ({
+  children1,
+  children2,
+  line = false,
+  item,
+  variant = "primary",
+  broke = false,
+  style,
+}) => {
   const baseStyle = {
     fontSize: "62px",
-    lineHeight: "74px",
-    letterSpacing: "-0.02em",
     fontWeight: "600",
     fontFamily: "var(--font-brand)",
-    
   };
 
   const variantStyles = {
@@ -19,13 +24,19 @@ const Info = ({ children1,children2, item, variant = "primary", broke,style }) =
   return (
     <>
       <Tag style={{ ...baseStyle, ...variantStyles[variant], ...style }}>
-        {broke?
-        <>
-        <span className="text-nowrap">{children1}</span>
-        <span className="inline-block">{children2}</span>  
-        </>:
-        < >{children1}</>
-        }
+        {broke ? (
+          <>
+            <span className="text-nowrap">{children1}</span>
+            <span className="inline-block">{children2}</span>
+            {line && (
+              <div className="w-full h-0.5 absolute bottom-0 left-0 scale-x-0 bg-brand origin-left group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer">
+
+              </div>
+            )}
+          </>
+        ) : (
+          <>{children1}</>
+        )}
       </Tag>
     </>
   );

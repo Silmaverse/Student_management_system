@@ -6,6 +6,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 import { SlSocialTwitter } from "react-icons/sl";
 import { PiYoutubeLogoLight } from "react-icons/pi";
 import Footerlist from "./Footerlist";
+import Info from "../../utils/Info";
 
 const Footerbottompart = () => {
   return (
@@ -16,15 +17,25 @@ const Footerbottompart = () => {
             <div className="navimg w-10 h-10">
               <img src={brandImage} alt="error" />
             </div>
-            <h1 className="text-[32px] font-semibold font-brand text-white">
-              E-tutor
-            </h1>
+            <Info
+              item={"h1"}
+              children1={"E-tutor"}
+              style={{ fontSize: "32px", fontWeight: "600", color: "#fff" }}
+            />
           </div>
           <div className="textpart py-5">
-            <p className="text-[14px] w-100 font-brand font-normal text-fivenary">
-              Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Donec
-              mattis odio at.
-            </p>
+            <Info
+              item={"p"}
+              style={{
+                fontSize: "14px",
+                width: "400px",
+                fontWeight: "400",
+                color: "var(--color-fivenary)",
+              }}
+              children1={
+                "Aliquam rhoncus ligula est, non pulvinar elit convallis nec. Done mattis odio at."
+              }
+            />
           </div>
           <div className="socialicon flex gap-4 items-center">
             <div className="w-11.5 h-11.5 bg-[#363B47] flex justify-center items-center">

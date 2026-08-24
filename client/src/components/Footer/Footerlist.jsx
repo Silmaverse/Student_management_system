@@ -2,73 +2,217 @@ import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import apple from "../../assets/appleplaystore.png";
 import android from "../../assets/androidplaystore.png";
+import Info from "../../utils/Info";
+import NavItem from "../../utils/NavItem";
 
 const Footerlist = () => {
   return (
-    <>
+    <div className="flex gap-6 items-start">
       <div className="second">
-        <h3 className="text-[14px] font-brand font-medium text-white pb-5">
-          Top 4 Category
-        </h3>
+        <Info
+          item={"h3"}
+          style={{
+            fontSize: "14px",
+            fontWeight: "500",
+            color: "#fff",
+            paddingBottom: "14px",
+          }}
+          children1={"Top 4 Category"}
+        />
         <ul className="space-y-6">
-          <li className="text-[14px] font-brand fomt-normal text-fivenary">
-            Development
-          </li>
-          <li className="text-[14px] font-brand fomt-normal text-fivenary">
-            Finance & Accounting
-          </li>
-          <li className="text-[14px] font-brand fomt-normal text-fivenary">
-            Design
-          </li>
-          <li className="text-[14px] font-brand fomt-normal text-fivenary">
-            Business
-          </li>
+          <Info
+            item={"li"}
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+            }}
+            children1={"Development"}
+          />
+          <Info
+            item={"li"}
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+            }}
+            children1={"Finance & Accounting"}
+          />
+          <Info
+            item={"li"}
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+            }}
+            children1={"Design"}
+          />
+          <Info
+            item={"li"}
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              color: "var(--color-fivenary)",
+            }}
+            children1={"Business"}
+          />
         </ul>
       </div>
       <div className="third">
-        <h3 className="text-[14px] font-brand font-medium text-white pb-5">
-          Quick Links
-        </h3>
-        <ul className="space-y-4 flex flex-col">
-          <li className="text-[14px] w-fit inline-flex gap-1 font-brand font-normal text-fivenary group relative">
-            <span>About</span>
-            <IoIosArrowRoundForward className="scale-x-0 origin-left size-6  text-white group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer" />
-            <div className="w-full h-0.5 absolute bottom-0 left-0 scale-x-0 bg-brand origin-left group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-          </li>
-          <li className="text-[14px] w-fit inline-flex gap-1 font-brand font-normal text-fivenary group relative">
-            <span>Become Instructor</span>
-            <IoIosArrowRoundForward className="scale-x-0 origin-left size-6  text-white group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer" />
-            <div className="w-full h-0.5 absolute bottom-0 left-0 scale-x-0 bg-brand origin-left group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-          </li>
-          <li className="text-[14px] w-fit inline-flex gap-1 font-brand font-normal text-fivenary group relative">
-            <span>Contact</span>
-            <IoIosArrowRoundForward className="scale-x-0 origin-left size-6  text-white group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer" />
-            <div className="w-full h-0.5 absolute bottom-0 left-0 scale-x-0 bg-brand origin-left group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-          </li>
-          <li className="text-[14px] w-fit inline-flex gap-1 font-brand font-normal text-fivenary group relative">
-            <span>Career</span>
-            <IoIosArrowRoundForward className="scale-x-0 origin-left size-6  text-white group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer" />
-            <div className="w-full h-0.5 absolute bottom-0 left-0 scale-x-0 bg-brand origin-left group-hover:scale-x-100 transition-transform delay-100 duration-300 ease-in-out cursor-pointer"></div>
-          </li>
+        <Info
+          item={"h3"}
+          style={{
+            fontSize: "14px",
+            fontWeight: "400",
+            color: "#fff",
+            paddingBottom: "14px",
+          }}
+          children1={"Quick Links"}
+        />
+        <ul className="space-y-6 flex flex-col">
+          <NavItem
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              color: "var(--color-fivenary)",
+              fontFamily: "var(--font-brand)",
+              display: "inline-flex",
+              width: "fit-content",
+              gap: "1px",
+              position: "relative",
+            }}
+            userstyle={false}
+            children={"About"}
+            arrowstyle={true}
+            children2={
+              <IoIosArrowRoundForward className="size-6 text-white cursor-pointer" />
+            }
+            line={false}
+            children3={true}
+          />
+
+          <NavItem
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              color: "var(--color-fivenary)",
+              fontFamily: "var(--font-brand)",
+              display: "inline-flex",
+              width: "fit-content",
+              gap: "1px",
+              position: "relative",
+            }}
+            userstyle={false}
+            children={"Become Instructor"}
+            arrowstyle={true}
+            children2={
+              <IoIosArrowRoundForward className="size-6 text-white cursor-pointer" />
+            }
+            line={false}
+            children3={true}
+          />
+          <NavItem
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+              display: "inline-flex",
+              width: "fit-content",
+              gap: "1px",
+              position: "relative",
+            }}
+            userstyle={false}
+            children={"Contact"}
+            arrowstyle={true}
+            children2={
+              <IoIosArrowRoundForward className="size-6 text-white cursor-pointer" />
+            }
+            line={false}
+            children3={true}
+          />
+          <NavItem
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+              display: "inline-flex",
+              width: "fit-content",
+              gap: "1px",
+              position: "relative",
+            }}
+            userstyle={false}
+            children={"Career"}
+            arrowstyle={true}
+            children2={
+              <IoIosArrowRoundForward className="size-6 text-white cursor-pointer" />
+            }
+            line={false}
+            children3={true}
+          />
         </ul>
       </div>
       <div className="fourth">
-        <h3 className="text-[14px] font-brand font-medium text-white pb-5">
-          Support
-        </h3>
+        <Info
+          item={"h3"}
+          style={{
+            fontSize: "14px",
+            fontWeight: "500",
+            color: "#fff",
+            paddingBottom: "14px",
+          }}
+          children1={"Support"}
+        />
         <ul className="space-y-6">
-          <li className="text-[14px] font-brand fomt-normal text-fivenary">
-            Help Center
-          </li>
-          <li className="text-[14px] font-brand fomt-normal text-fivenary">
-            FAQs
-          </li>
-          <li className="text-[14px] font-brand fomt-normal text-fivenary">
-            Terms & Condition
-          </li>
-          <li className="text-[14px] font-brand fomt-normal text-fivenary">
-            Privacy Policy
-          </li>
+          <NavItem
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+            }}
+            children={"Help Center"}
+            line={false}
+            userstyle={false}
+          />
+          <NavItem
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+            }}
+            children={"FAQs"}
+            line={false}
+            userstyle={false}
+          />
+          <NavItem
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+            }}
+            children={"Terms & Condition"}
+            line={false}
+            userstyle={false}
+          />
+          <NavItem
+            style={{
+              fontSize: "14px",
+              fontWeight: "400",
+              fontFamily: "var(--font-brand)",
+              color: "var(--color-fivenary)",
+            }}
+            children={"Privacy Policy"}
+            line={false}
+            userstyle={false}
+          />
+          
         </ul>
       </div>
       <div className="fivth">
@@ -84,7 +228,7 @@ const Footerlist = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

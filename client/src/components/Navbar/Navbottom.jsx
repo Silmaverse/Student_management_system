@@ -1,4 +1,3 @@
-import React from 'react'
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { IoSearchOutline } from "react-icons/io5";
 import brandImage from "../../assets/brandImage/GraduationCap.png";
@@ -6,6 +5,7 @@ import { GrNotification } from "react-icons/gr";
 import { FaRegHeart } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
 import Button from '../../utils/Button';
+import Info from "../../utils/Info";
 
 const Navbottom = () => {
   return (
@@ -16,9 +16,7 @@ const Navbottom = () => {
                 <div className="navimg w-10 h-10">
                   <img src={brandImage} alt="error" />
                 </div>
-                <h1 className="text-[32px] font-semibold font-brand text-primary">
-                  E-tutor
-                </h1>
+            <Info item={"h1"} children1={"E-tutor"} style={{fontSize:"32px",fontWeight:"600",color:"var(--color-primary)"}} />
               </div>
               <div className="flex gap-4 items-center">
                 <div className="browse w-50 h-12 border-2 border-boxes px-4.5 py-3 flex justify-between items-center">
