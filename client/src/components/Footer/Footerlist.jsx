@@ -8,6 +8,7 @@ import NavItem from "../../utils/NavItem";
 const Footerlist = () => {
   return (
     <div className="flex gap-6 items-start">
+      {/* Footer list start from second part */}
       <div className="second">
         <Info
           item={"h3"}
@@ -61,6 +62,7 @@ const Footerlist = () => {
           />
         </ul>
       </div>
+      {/* Footer list third part */}
       <div className="third">
         <Info
           item={"h3"}
@@ -156,6 +158,7 @@ const Footerlist = () => {
           />
         </ul>
       </div>
+      {/* Footer list fourth part */}
       <div className="fourth">
         <Info
           item={"h3"}
@@ -215,6 +218,7 @@ const Footerlist = () => {
           
         </ul>
       </div>
+      {/* Footer list fifth part */}
       <div className="fivth">
         <h3 className="text-[14px] font-brand font-medium text-white pb-5">
           Downlaod our app

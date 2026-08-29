@@ -17,17 +17,20 @@ const Category = () => {
     <>
       <section id="category">
         <div className="container">
+          {/* haeding section */}
           <Info
             item={"h2"}
             style={{
               fontSize: "40px",
               fontWeight: "600",
               fontFamily: "var(--font-brand)",
-              textAlign: "center",
+              textAlign: "center",paddingTop:"50px"
             }}
             children1={"Browse top category"}
           />
+          {/* layout structure */}
           <div className="flex flex-wrap justify-center gap-6 py-12">
+            {/* All Category Card Design */}
             <CategoryCard
               imgsrc={cpu}
               bgColor={"bg-card1"}
@@ -101,6 +104,7 @@ const Category = () => {
               coursename={"Processors"}
               totalcourse={"63,476 Courses"}
             />
+            {/* bottom heading section browse all category */}
             <div className="pt-10 flex gap-2 items-center">
 
             <Info

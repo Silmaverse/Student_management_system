@@ -6,13 +6,15 @@ import development from "../assets/developmnet.png";
 import marketing from "../assets/marketing.png";
 import business from "../assets/business.png";
 import software from "../assets/software.png";
+import Featured from "./Featured";
 
 const BestSellingCourse = () => {
   return (
     <>
-      <section id="Bestsellingcourse" className="bg-basicIt">
+      <section id="Bestsellingcourse" className="bg-basicIt relative pb-100">
         <div className="container">
-          <div className="courses py-20">
+          {/* heading part*/}
+          <div className="courses pt-20 ">
             <Info
               children1={"Best selling courses"}
               item={"h1"}
@@ -22,6 +24,7 @@ const BestSellingCourse = () => {
                 textAlign: "center",
               }}
             />
+            {/* all course card */}
             <div className="flex flex-wrap gap-6.25 pt-6 justify-center items-center">
               <CourseCard
                 courseimg={designimg}
@@ -131,6 +134,10 @@ const BestSellingCourse = () => {
               />
             </div>
           </div>
+        </div>
+        {/* overlay section */}
+        <div className="absolute left-1/2 bottom-[0%] -translate-x-1/2 translate-y-1/2 w-370 z-10 outline-boxes outline-1">
+        <Featured/>
         </div>
       </section>
     </>

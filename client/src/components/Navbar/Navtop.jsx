@@ -6,7 +6,9 @@ const Navtop = () => {
   return (
     <>
       <div className="navtop px-8 flex justify-between items-center">
+        {/* Left section */}
         <div className="navleftul">
+          {/* nav item */}
           <ul className="flex gap-10 items-center">
             <NavItem
               style={{
@@ -50,7 +52,9 @@ const Navtop = () => {
             />
           </ul>
         </div>
-        <div className="navrightul">
+        {/* Right section */}
+        <div className="navrightul">'
+          {/* Nav item language option */}
           <ul className="flex gap-6">
             <NavItem
               children={"USD"}

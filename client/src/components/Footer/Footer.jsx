@@ -15,6 +15,7 @@ const Footer = () => {
           <div className="bottompart border-b border-b[#9b9da3] pt-20 pb-23">
             <Footerbottompart/>
           </div>
+          {/* footer last section copyright */}
           <div className="lastpart flex justify-between px-50 py-6 items-center  ">
             <div className="flex gap-2 items-center text-[14px] copyrighttext text-ternary font-brand font-normal">
               <FaRegCopyright />

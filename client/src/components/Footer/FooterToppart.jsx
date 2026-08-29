@@ -6,7 +6,9 @@ const FooterToppart = () => {
   return (
     <>
       <div className="toppart border-b border-b-[#9b9da3 ] flex gap-34 justify-center items-center">
+        {/* left section */}
         <div className="left">
+          {/* Heading part */}
           <Info
             item={"h1"}
             style={{
@@ -18,6 +20,7 @@ const FooterToppart = () => {
             }}
             children1={"Start learning with 67.1k students around the world."}
           />
+          {/*Footer Buttons */}
           <div className="btn pt-7.5 pb-25 flex gap-4 items-center">
             <a
               target="_blank"
@@ -40,7 +43,9 @@ const FooterToppart = () => {
             </Link>
           </div>
         </div>
+        {/* Right Section */}
         <div className="right flex gap-6 items-center">
+          {/* Statistics part */}
           <div className="txt1">
             <Info item={"h1"} style={{fontSize:"40px",fontWeight:"600",color:"#ffff"}} children1={"6.3k"}/>
             <Info item={"p"} style={{fontSize:"16px",fontWeight:"500",color:"var(--color-ternary)"}} children1={"Online courses"}/>

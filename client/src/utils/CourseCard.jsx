@@ -53,7 +53,7 @@ const CourseCard = ({
             />:<Info
               item={"h4"}
               style={{ fontSize: "14px", fontWeight: "600",paddingTop:"14px",width:"216px"  }}
-              children1={title1} children2={title2}
+              children1={title1} children2={title2} broke={true}
             />
           }
         </div>

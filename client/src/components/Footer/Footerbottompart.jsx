@@ -12,6 +12,7 @@ const Footerbottompart = () => {
   return (
     <>
       <div className="bottompart flex gap-6 items-center justify-center">
+        {/* Footer brand logo part */}
         <div className="first">
           <div className="navlogo flex gap-2 ">
             <div className="navimg w-10 h-10">
@@ -37,6 +38,7 @@ const Footerbottompart = () => {
               }
             />
           </div>
+          {/* Social Icon */}
           <div className="socialicon flex gap-4 items-center">
             <div className="w-11.5 h-11.5 bg-[#363B47] flex justify-center items-center">
               <FiFacebook className="size-6.5 text-white" />

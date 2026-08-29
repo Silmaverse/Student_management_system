@@ -7,10 +7,12 @@ import Info from "../utils/Info";
 const Hero = () => {
   return (
     <>
-      <section id="hero">
+      <section id="hero" className="bg-[#F0F2F5]">
         <div className="container">
+          {/* layout division */}
           <div className="part flex">
-            <div className="left w-162 space-y-10  py-25 pl-35">
+            {/* Left part */}
+            <div className="left w-162 space-y-10  pt-20 pl-35">
               <Info
                 item="h1"
                 broke={true}
@@ -38,7 +40,8 @@ const Hero = () => {
                 <Button variant="primary" children={"Create Account"} />
               </Link>
             </div>
-            <div className="right">
+            {/* Right part */}
+            <div className="right ">
               <img src={banner} alt="error" />
             </div>
           </div>
