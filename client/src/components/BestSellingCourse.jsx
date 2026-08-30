@@ -11,8 +11,8 @@ import Featured from "./Featured";
 const BestSellingCourse = () => {
   return (
     <>
-      <section id="Bestsellingcourse" className="bg-basicIt relative pb-100">
-        <div className="container">
+      <section id="Bestsellingcourse" className="bg-basicIt relative pb-100 ">
+        <div className="container ">
           {/* heading part*/}
           <div className="courses pt-20 ">
             <Info
@@ -134,10 +134,10 @@ const BestSellingCourse = () => {
               />
             </div>
           </div>
-        </div>
         {/* overlay section */}
         <div className="absolute left-1/2 bottom-[0%] -translate-x-1/2 translate-y-1/2 w-370 z-10 outline-boxes outline-1">
         <Featured/>
+        </div>
         </div>
       </section>
     </>

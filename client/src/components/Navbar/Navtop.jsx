@@ -53,9 +53,9 @@ const Navtop = () => {
           </ul>
         </div>
         {/* Right section */}
-        <div className="navrightul">'
+        <div className="navrightul">
           {/* Nav item language option */}
-          <ul className="flex gap-6">
+          <ul className="flex gap-6 items-center">
             <NavItem
               children={"USD"}
               children2={<MdOutlineKeyboardArrowDown />}

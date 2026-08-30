@@ -11,11 +11,11 @@ const CourseCard = ({
   price,
   rating,
   enrolledstudents,
-  bgcolor,textColor
+  bgcolor,textColor,customStyle
 }) => {
   return (
     <>
-      <div className="w-68 h-100 bg-white">
+      <div className={`w-68 h-100 bg-white ${customStyle}`}>
          {/* Course Image */}
         <div className="courseimg w-full ">
           <img src={courseimg} className="w-full h-full object-cover" />
