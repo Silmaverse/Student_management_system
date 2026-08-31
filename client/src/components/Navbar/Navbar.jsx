@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <section id="navbar">
-        <div className="container py-4 bg-primary">
+        <div className="container py-6 bg-primary">
           <Navtop/>
         </div>
         <div className="container">

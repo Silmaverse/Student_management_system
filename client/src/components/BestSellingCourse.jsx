@@ -11,7 +11,7 @@ import Featured from "./Featured";
 const BestSellingCourse = () => {
   return (
     <>
-      <section id="Bestsellingcourse" className="bg-basicIt relative pb-100 ">
+      <section id="Bestsellingcourse" className="bg-basicIt relative pb-97.5 ">
         <div className="container ">
           {/* heading part*/}
           <div className="courses pt-20 ">
@@ -25,7 +25,7 @@ const BestSellingCourse = () => {
               }}
             />
             {/* all course card */}
-            <div className="flex flex-wrap gap-6.25 pt-6 justify-center items-center">
+            <div className="flex flex-wrap gap-6.25 pt-10 justify-center items-center">
               <CourseCard
                 courseimg={designimg}
                 tag={"Design"}

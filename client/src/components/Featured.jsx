@@ -6,7 +6,7 @@ const Featured = () => {
     <>
       <section id="featuredCourse" className="bg-white">
         {/* header */}
-        <div className="w-full p-20">
+        <div className="w-full h-164 p-20">
           <div className="flex justify-between items-center pb-10">
             <h1 className="text-[40px] font-brand font-semibold text-primary">
               Our feature courses

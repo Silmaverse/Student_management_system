@@ -6,16 +6,17 @@ import { FaRegHeart } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
 import Button from "../../utils/Button";
 import Info from "../../utils/Info";
+import { Link } from "react-router";
 
 const Navbottom = () => {
   return (
     <>
       {/* LayOut structure */}
-      <div className="navbottom flex justify-between items-center py-3 px-8">
+      <div className="navbottom flex justify-between items-center py-6 px-8">
         {/* Left Section */}
         <div className="navleft flex gap-12.5 items-center ">
           {/* NavLogo */}
-          <div className="navlogo flex gap-2 ">
+          <div className="navlogo flex gap-2  items-center">
             <div className="navimg w-10 h-10">
               <img src={brandImage} alt="error" />
             </div>
@@ -66,12 +67,9 @@ const Navbottom = () => {
           </div>
           {/* Account button */}
           <div className="navbtn flex gap-3">
-            <Button
-              variant="secondary"
-              style={{ width: "168px", height: "48px", fontSize: "16px" }}
-            >
-              Create Account
-            </Button>
+            <Link to={"/auth/login"} className="w-42 h-12 flex justify-center items-center text-[16px] font-semibold bg-secondarybtn text-brand font-brand">
+            Create Account
+            </Link>
             <Button
               variant="primary"
               style={{ width: "168px", height: "48px", fontSize: "16px" }}

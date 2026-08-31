@@ -12,7 +12,7 @@ const Hero = () => {
           {/* layout division */}
           <div className="part flex">
             {/* Left part */}
-            <div className="left w-162 space-y-10  pt-20 pl-35">
+            <div className="left w-162 py-25 pl-35">
               <Info
                 item="h1"
                 broke={true}
@@ -22,6 +22,7 @@ const Hero = () => {
                   width: "100%",
                   lineHeight: "74px",
                   letterSpacing: "-0.02em",
+                  paddingBottom:'40px'
                 }}
               />
               <Info
@@ -33,6 +34,7 @@ const Hero = () => {
                   fontSize: "24px",
                   fontWeight: "400",
                   color: "var(--color-boxestext)",
+                  paddingBottom:'40px'
                 }}
               />
               <p className="text-[24px] font-brand font-normal text-boxestext"></p>
@@ -41,7 +43,7 @@ const Hero = () => {
               </Link>
             </div>
             {/* Right part */}
-            <div className="right ">
+            <div className="right pt-13 w-225 h-137">
               <img src={banner} alt="error" />
             </div>
           </div>

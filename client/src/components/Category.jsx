@@ -24,12 +24,13 @@ const Category = () => {
               fontSize: "40px",
               fontWeight: "600",
               fontFamily: "var(--font-brand)",
-              textAlign: "center",paddingTop:"50px"
+              textAlign: "center",
+              paddingTop: "80px",
             }}
             children1={"Browse top category"}
           />
           {/* layout structure */}
-          <div className="flex flex-wrap justify-center gap-6 py-12">
+          <div className="flex flex-wrap justify-center gap-6 py-10">
             {/* All Category Card Design */}
             <CategoryCard
               imgsrc={cpu}
@@ -106,21 +107,21 @@ const Category = () => {
             />
             {/* bottom heading section browse all category */}
             <div className="pt-10 flex gap-2 items-center">
-
-            <Info
-              item={"h3"}
-              style={{
-                fontSize: "14px",
-                fontFamily: "var(--font-brand)",
-                fontWeight: "400",
-                color: "var(--color-boxestext)",
-              }}
-              children1={"We have more category & subcategory."}
+              <Info
+                item={"h3"}
+                style={{
+                  fontSize: "14px",
+                  fontFamily: "var(--font-brand)",
+                  fontWeight: "400",
+                  color: "var(--color-boxestext)",
+                }}
+                children1={"We have more category & subcategory."}
               />
-            <Link className="text-sm font-medium font-brand text-brand flex gap-2 items-center ">
-             Browse All<IoIosArrowRoundForward className="size-6 text-brand cursor-pointer" />
-            </Link>
-              </div>
+              <Link className="text-sm font-medium font-brand text-brand flex gap-2 items-center ">
+                Browse All
+                <IoIosArrowRoundForward className="size-6 text-brand cursor-pointer" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
