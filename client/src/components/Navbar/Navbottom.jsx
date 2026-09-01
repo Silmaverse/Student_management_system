@@ -4,7 +4,6 @@ import brandImage from "../../assets/brandImage/GraduationCap.png";
 import { GrNotification } from "react-icons/gr";
 import { FaRegHeart } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
-import Button from "../../utils/Button";
 import Info from "../../utils/Info";
 import { Link } from "react-router";
 
@@ -16,7 +15,7 @@ const Navbottom = () => {
         {/* Left Section */}
         <div className="navleft flex gap-12.5 items-center ">
           {/* NavLogo */}
-          <div className="navlogo flex gap-2  items-center">
+          <Link to={'/'} className="navlogo flex gap-2  items-center">
             <div className="navimg w-10 h-10">
               <img src={brandImage} alt="error" />
             </div>
@@ -29,7 +28,7 @@ const Navbottom = () => {
                 color: "var(--color-primary)",
               }}
             />
-          </div>
+          </Link>
           {/* Nav browse search part */}
           <div className="flex gap-4 items-center">
             <div className="browse w-50 h-12 border-2 border-boxes px-4.5 py-3 flex justify-between items-center">
@@ -67,15 +66,15 @@ const Navbottom = () => {
           </div>
           {/* Account button */}
           <div className="navbtn flex gap-3">
-            <Link to={"/auth/login"} className="w-42 h-12 flex justify-center items-center text-[16px] font-semibold bg-secondarybtn text-brand font-brand">
+            <Link to={"/auth/register"} className="w-42 h-12 flex justify-center items-center text-[16px] font-semibold bg-secondarybtn text-brand font-brand">
             Create Account
             </Link>
-            <Button
+            <Link to={'/auth/login'} className="w-42 h-12 text-[16px] bg-brand text-white font-semibold font-brand flex justify-center items-center"
               variant="primary"
               style={{ width: "168px", height: "48px", fontSize: "16px" }}
             >
               Sign In
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

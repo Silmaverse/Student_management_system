@@ -8,7 +8,7 @@ const SigunUpNavbar = () => {
     <>
       {/* NavLogo */}
       <div className="flex px-45 py-6 border-b border-boxes justify-between items-center">
-        <div className="navlogo flex gap-2 items-center">
+        <Link to={'/'} className="navlogo flex gap-2 items-center">
           <div className="navimg w-10 h-10">
             <img src={brandImage} alt="error" />
           </div>
@@ -21,14 +21,14 @@ const SigunUpNavbar = () => {
               color: "var(--color-primary)",
             }}
           />
-        </div>
+        </Link>
         {/* Button createAccount don not have account*/}
         <div className="flex gap-2 items-center">
-          <p className="text-sm font-brand font-normal text-boxestext">
-            Don’t have account?
-          </p>
+          <Link to={"/auth/login"} className="text-sm font-brand font-normal text-boxestext">
+             Have an account?
+          </Link>
           <Link
-            to={"/auth/login"}
+            to={"/auth/register"}
             className="w-42 h-12 flex justify-center items-center text-[16px] font-semibold bg-secondarybtn text-brand font-brand"
           >
             Create Account
